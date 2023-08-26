@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Edit Comment</title>
+</head>
+
+<body>
+	<!-- send a PATCH req to '/comments/:id' -->
+	<form action="/comments/<%= id%>?_method=PATCH" method="POST">
+		<textarea name="comment"><%= comment.comment%></textarea> <!-- preload the old comment -->
+		<button type="submit">SAVE CHANGES!</button>
+	</form>
+</body>
+
+</html>

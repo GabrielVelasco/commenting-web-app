@@ -1,0 +1,23 @@
+<!-- USED TO DISPLAY A BUNCH OF THINGS OF THE SAME TYPE (comments, imgs....) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>View all comments</title>
+</head>
+
+<body>
+	<h1>All comments!</h1>
+	<ul>
+		<!-- // receive a comment obj {keys: values ...} and iterate over it, creating a LI -->
+		<%for(const c in comments){ %>
+			<%// c will assume a key/comment_Id at each iteration %>
+			<li><%= comments[c].username%> - <%= comments[c].comment%> - <a href="/comments/<%= c %>">Expand</a></li>
+		<%}%>
+	</ul>
+
+	<a href="/comments/new">Write some shit again</a>
+</body>
+
+</html>

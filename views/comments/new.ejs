@@ -1,0 +1,47 @@
+<!-- USED TO DISPLAY THE FORM -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form to new comment</title>
+</head>
+<body>
+	<div>
+		<!-- default method == get, must specify which method I want. -->
+		<!-- send POST/GET/PATCH/DELETE req to 'action' URL -->
+
+		<form action="/comments" method="post">
+			<div>
+				<label for="username">Username: </label>
+				<input id ="username"type="text" name="username">
+			</div>
+			<br>
+			<div>
+				<label for="comment">Type your comment: </label>
+				<br>
+				<textarea id="comment" name="comment"></textarea>
+			</div>
+			<button type="submit">Post your shit</button>
+		</form>
+
+	</div>
+</body>
+</html>
+
+<!-- 
+req = {
+	body: {
+		varFromForm1: value1,
+		varFromForm2: value2,
+		...
+	},
+	key2: value2,
+	...
+	...
+	...
+}
+
+
+req.body.varFromForm1 == value1
+ -->
