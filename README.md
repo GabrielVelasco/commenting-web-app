@@ -48,4 +48,4 @@ This is a CRUD/REST API that simulates a commenting web app created using Node.j
 4. Use your web browser (localhost /comments | localhost/comments/new, and so on...)
 
 ## Disclaimer
-This API is a learning project and not intended for production use.
+I created this web app while ago while studying node/express and so on...
